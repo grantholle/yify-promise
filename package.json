@@ -1,0 +1,37 @@
+{
+  "name": "yify-promise",
+  "version": "1.0.0",
+  "description": "Find movies from Yify",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "npm run build && ./node_modules/.bin/mocha test/*",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "torrents",
+    "yify",
+    "yts",
+    "magnet"
+  ],
+  "author": {
+    "name": "Grant Holle",
+    "url": "http://grantholle.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "@types/hapi__joi": "^15.0.2",
+    "axios": "^0.19.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8"
+  }
+}
