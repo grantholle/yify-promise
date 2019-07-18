@@ -107,7 +107,7 @@ yify.search(options).then(results => {
 })
 ```
 
-To attach the magnet urls, pass the option in the second argument.
+To attach the magnet urls to the `torrent.magnet` property, pass the option in the second argument.
 
 ```js
 const options = {
